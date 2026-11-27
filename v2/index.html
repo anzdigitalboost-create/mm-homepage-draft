@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MultiMarketing | Cross-Cultural Marketing Agency in Auckland</title>
+<meta name="description" content="MultiMarketing connects New Zealand and Chinese-speaking markets through cross-cultural brand strategy, communications, market entry and events. Auckland, since 2009.">
+<meta property="og:title" content="MultiMarketing — Trust Creates Possibilities">
+<meta property="og:description" content="Cross-cultural marketing bridging New Zealand and China since 2009.">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="zh-Hans" href="zh.html">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#fff; --bg:#fafaf8; --soft:#f2f1ee; --ink:#0e0e10; --ink-2:#3a3a40; --muted:#77777f; --line:rgba(14,14,16,.1);
+  --g-light:linear-gradient(100deg,#312783 0%,#9a4f9f 55%,#e2739f 100%); --g-dark:linear-gradient(100deg,#ee86b5 0%,#c26aaa 50%,#9478dc 100%); --plum:#9a4f9f;
+  --max:1400px; --gut:clamp(20px,4vw,64px);
+  --sans:"General Sans",system-ui,sans-serif; --serif:var(--sans); --zh:"Noto Serif SC",serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.zh{font-family:var(--zh)}
+.it{font-family:var(--sans);font-style:normal;font-weight:inherit;letter-spacing:-.005em}
+.kicker{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.kicker .zh{letter-spacing:.22em;white-space:nowrap}
+
+.btn{display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 8px 0 24px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:16px;white-space:nowrap}
+.btn i{width:38px;height:38px;border-radius:50%;background:var(--g-dark);display:grid;place-items:center;transition:transform .45s var(--ease)}
+.btn i svg{width:16px;height:16px;stroke:#fff}
+.btn:hover i{transform:rotate(-45deg)}
+.btn.w{background:#fff;color:var(--ink)}
+.ghost{display:inline-flex;align-items:center;height:54px;padding:0 24px;border-radius:999px;border:1px solid rgba(255,255,255,.45);color:#fff;font-weight:500;white-space:nowrap;transition:background .3s,color .3s}
+.ghost:hover{background:#fff;color:var(--ink)}
+.tlink{display:inline-flex;align-items:center;gap:10px;font-weight:500;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:3px;transition:background-size .45s var(--ease)}
+.tlink:hover{background-size:0 1px;background-position:100% 100%}
+.tlink svg{width:15px;height:15px}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:60;color:#fff;transition:background .4s,color .4s,transform .5s var(--ease),box-shadow .4s}
+header.solid{background:rgba(250,250,248,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+header.hide{transform:translateY(-100%)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:86px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{height:28px;width:auto;transition:filter .4s}
+header.solid .logo img{filter:invert(1)}
+.logo .zh{font-size:13px;letter-spacing:.3em;opacity:.7}
+.menu{display:flex;gap:32px;font-size:15px;font-weight:500}
+.menu a{position:relative}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.menu a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-r{display:flex;align-items:center;gap:8px}
+.sbtn{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 15px;border-radius:999px;border:1px solid currentColor;font-size:14px;font-weight:500;opacity:.9}
+.sbtn svg{width:15px;height:15px}
+.nav .btn{height:42px;padding:0 5px 0 18px;font-size:14px;gap:10px;background:#fff;color:var(--ink)}
+header.solid .nav .btn{background:var(--ink);color:#fff}
+.nav .btn i{width:32px;height:32px}
+.lang{display:flex;align-items:center;height:42px;padding:3px;border-radius:999px;border:1px solid currentColor;font-size:13px;font-weight:500}
+.lang a{height:34px;padding:0 12px;white-space:nowrap;display:grid;place-items:center;border-radius:999px;opacity:.7;transition:opacity .3s}
+.lang a:hover{opacity:1}
+.lang a.on{opacity:1;background:#fff;color:var(--ink)}
+header.solid .lang a.on,body.menu-open .lang a.on{background:var(--ink);color:#fff}
+.burger{display:none;width:42px;height:42px;border-radius:50%;border:1px solid currentColor}
+.burger b{display:block;width:16px;height:1.5px;background:currentColor;margin:4px auto}
+
+/* HERO — full-bleed video */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;color:#fff;background:#0e0e10}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1.6s ease,transform 9s linear}
+.hero video.on{opacity:1;transform:scale(1)}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,14,16,.45) 0%,rgba(14,14,16,0) 28%,rgba(14,14,16,0) 45%,rgba(14,14,16,.72) 100%),linear-gradient(90deg,rgba(14,14,16,.45),rgba(14,14,16,0) 60%)}
+.hero-in{position:relative;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:36px}
+.hero h1{font-weight:500;font-size:clamp(42px,5.4vw,92px);line-height:1.02;letter-spacing:-.022em;max-width:15ch}
+.hero h1 .it{font-size:1em;letter-spacing:-.01em}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%);transition:transform 1.2s var(--ease)}
+.go .hero h1 .ln>span{transform:none}
+.go .hero h1 .ln:nth-child(2)>span{transition-delay:.1s}
+.go .hero h1 .ln:nth-child(3)>span{transition-delay:.2s}
+.hero .row{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-top:30px}
+.hero .lead{font-size:clamp(17px,1.35vw,20px);line-height:1.55;max-width:540px;color:rgba(255,255,255,.88)}
+.hero .cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.up{opacity:0;transform:translateY(18px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.go .up{opacity:1;transform:none}
+.go .u1{transition-delay:.45s}.go .u2{transition-delay:.6s}.go .u3{transition-delay:.75s}
+.kw{list-style:none;display:flex;flex-direction:column;gap:10px;text-align:right;font-size:13px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.kw li{display:flex;align-items:center;justify-content:flex-end;gap:10px}
+.kw li::before{content:"";width:22px;height:1px;background:rgba(255,255,255,.5)}
+.hero-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-size:13px;color:rgba(255,255,255,.7);letter-spacing:.04em}
+.clips{display:flex;align-items:center;gap:14px}
+.clips button{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.55);font-size:13px;transition:color .3s}
+.clips button.on{color:#fff}
+.clips button i{position:relative;display:block;width:34px;height:2px;background:rgba(255,255,255,.25);overflow:hidden;border-radius:2px}
+.clips button i::after{content:"";position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:left}
+.clips button.on i::after{animation:fill var(--dur,7s) linear forwards}
+@keyframes fill{to{transform:scaleX(1)}}
+
+/* sections */
+.sec{padding:clamp(96px,11vw,170px) 0}
+.h2{font-weight:500;font-size:clamp(32px,3.4vw,56px);line-height:1.08;letter-spacing:-.018em}
+.h2 .it{font-size:1em}
+.gt{background-image:var(--g-light);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;padding-right:.08em}
+.dark .gt,footer .gt{background-image:var(--g-dark)}
+.rise .w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .05em .1em 0;margin-bottom:-.1em}
+.rise .w>span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.rise.in .w>span{transform:none}
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+.sec-top{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end;margin-bottom:64px}
+.sec-top p{color:var(--ink-2);max-width:460px;justify-self:end;font-size:18px}
+
+/* BRIDGE (autoplay when in view) */
+.bridge{background:linear-gradient(180deg,#fff 0%,#faf7fa 45%,#f4ecf4 100%);padding-bottom:clamp(80px,9vw,140px);overflow:hidden}
+.br-top{text-align:center;max-width:760px;margin:0 auto clamp(28px,3.5vw,48px)}
+.br-top .kicker{justify-content:center}
+.br-top p{color:var(--ink-2);font-size:18px;max-width:560px;margin:18px auto 0}
+.br-diff{display:inline-flex;align-items:center;gap:10px;margin-top:24px;padding:8px 16px 8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.br-diff i{width:8px;height:8px;border-radius:50%;background:var(--g-light);animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(226,115,159,.5)}100%{box-shadow:0 0 0 10px rgba(226,115,159,0)}}
+.br-art{position:relative}
+.shore-c{position:absolute;top:4%;z-index:2;display:flex;align-items:center;gap:14px;padding:14px 20px 14px 14px;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(49,39,131,.35);opacity:0;transform:translateY(12px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.shore-c.l{left:0}.shore-c.r{right:0;flex-direction:row-reverse;text-align:right;padding:14px 14px 14px 20px}
+.bridge.play .shore-c{opacity:1;transform:none}
+.bridge.play .shore-c.r{transition-delay:.15s}
+.shore-c .flag{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:600;letter-spacing:.06em;background:var(--g-light)}
+.shore-c.r .flag{background:linear-gradient(100deg,#e2739f 0%,#9a4f9f 45%,#312783 100%)}
+.shore-c small{display:block;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.shore-c strong{display:block;font-weight:500;font-size:16px;line-height:1.3}
+.shore-c .time{display:block;font-size:26px;font-weight:500;letter-spacing:-.01em;line-height:1.1;font-variant-numeric:tabular-nums;margin-top:2px}
+.colon{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+.br-art svg{width:100%;height:auto;display:block;overflow:visible}
+.br-art .dr{fill:none;stroke-dasharray:1;stroke-dashoffset:1;transition-property:stroke-dashoffset;transition-timing-function:cubic-bezier(.65,0,.35,1)}
+.bridge.play .dr{stroke-dashoffset:0}
+.br-art .fd{opacity:0;transition:opacity .9s ease}
+.bridge.play .fd{opacity:1}
+.deck{stroke:var(--ink);stroke-width:2.2;stroke-linecap:round}
+.chord{stroke:rgba(14,14,16,.6);stroke-width:1.2}
+.web{stroke:rgba(14,14,16,.3);stroke-width:.9;stroke-linejoin:round}
+.arch{stroke:url(#gA);stroke-width:3;stroke-linecap:round}
+.inner{stroke:rgba(14,14,16,.5);stroke-width:1}
+.hang{stroke:rgba(14,14,16,.22);stroke-width:.8}
+.pier,.shore{fill:none;stroke:rgba(14,14,16,.6);stroke-width:1.4}
+.water{stroke:rgba(49,39,131,.25);stroke-width:1}
+.sea{opacity:0;transition:opacity 1.4s ease .4s}.bridge.play .sea{opacity:1}
+.lead{stroke:url(#gL);stroke-width:1}
+.apex{fill:#e2739f;transform-box:fill-box;transform-origin:center;transform:scale(0);transition:transform .7s cubic-bezier(.34,1.56,.64,1)}
+.bridge.play .apex{transform:scale(1)}
+.apex-ring{fill:none;stroke:#e2739f;stroke-width:1;transform-box:fill-box;transform-origin:center;opacity:0}
+.bridge.play .apex-ring{animation:ring 2.6s ease-out 2.6s infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(4.5);opacity:0}}
+.apex-t{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.34em;fill:#9a4f9f}
+.car{opacity:0}.car.e{fill:#e2739f}.car.w{fill:#312783}
+.bridge.play .car.e{animation:carE 7s linear infinite}
+.bridge.play .car.w{animation:carW 7s linear infinite}
+@keyframes carE{0%{transform:translateX(70px);opacity:0}6%,94%{opacity:1}100%{transform:translateX(1130px);opacity:0}}
+@keyframes carW{0%{transform:translateX(1130px);opacity:0}6%,94%{opacity:1}100%{transform:translateX(70px);opacity:0}}
+.refl{opacity:.22}
+.shim{stroke:#9a4f9f;stroke-width:1.2;opacity:0}
+.bridge.play .shim{animation:shim 5s ease-in-out infinite}
+@keyframes shim{0%,100%{opacity:0}50%{opacity:.5}}
+.stg{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;text-align:center}
+.st{padding:20px 7% 0;opacity:.2;transform:translateY(10px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.st.on{opacity:1;transform:none}
+.st .n{font-family:var(--serif);font-style:normal;font-size:30px;line-height:1;background-image:var(--g-light);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.1em}
+.st h3{font-weight:500;font-size:clamp(19px,1.6vw,23px);line-height:1.25;letter-spacing:-.01em;margin:12px 0 10px}
+.st p{color:var(--ink-2);font-size:15px}
+
+/* expertise */
+.dark{background:var(--ink);color:#fff}
+.dark .kicker{color:rgba(255,255,255,.5)}
+.dark .sec-top p{color:rgba(255,255,255,.68)}
+.exp{display:block}
+.svc-list{border-top:1px solid rgba(255,255,255,.14)}
+.svc{display:grid;grid-template-columns:90px minmax(0,1.15fr) minmax(0,1fr) 48px;grid-template-areas:"no t d ar";column-gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(28px,2.6vw,40px) 0;border-bottom:1px solid rgba(255,255,255,.14);position:relative;opacity:.42;transition:opacity .5s var(--ease)}
+.svc{cursor:default}.svc:focus-visible{outline:1px solid rgba(255,255,255,.4);outline-offset:4px}
+.svc.on{opacity:1}
+.svc .no{grid-area:no;font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.08em}
+.svc h3{grid-area:t;font-weight:500;font-size:clamp(23px,2.3vw,36px);transition:transform .6s var(--ease);letter-spacing:-.015em;line-height:1.2}
+.svc p{grid-area:d;color:rgba(255,255,255,.7);font-size:16px;max-width:420px}
+.svc.on h3{transform:translateX(10px)}
+.svc .no{font-size:14px!important}
+.svc .ar{grid-area:ar;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;transition:all .45s var(--ease)}
+.svc .ar svg{width:15px;height:15px}
+.svc.on .ar{background:var(--g-dark);border-color:transparent;transform:rotate(-45deg)}
+.svc .bar{position:absolute;left:0;bottom:-1px;height:1.5px;width:100%;background:var(--g-dark);transform:scaleX(0);transform-origin:left}
+.svc.on .bar{transform:scaleX(1);animation:fill 5s linear}
+.exp-media{position:sticky;top:110px}
+.exp-media .frame{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:#1b1b22}
+.exp-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .9s ease,transform 1.6s var(--ease)}
+.exp-media img.on{opacity:1;transform:scale(1)}
+.exp-media .cnt{position:absolute;left:18px;bottom:16px;z-index:2;font-size:13px;letter-spacing:.12em;color:#fff;background:rgba(14,14,16,.45);padding:6px 12px;border-radius:999px}
+.exp-foot{display:flex;justify-content:flex-start;margin-top:48px}
+
+/* impact */
+.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.case{display:flex;flex-direction:column;gap:12px}
+.case .img{position:relative;border-radius:20px;overflow:hidden;background:#e4e9e1}
+.case .img{aspect-ratio:4/3.4}
+.case .img img{position:absolute;left:8%;top:8%;width:84%;transition:transform 1.2s var(--ease)}
+.case:hover .img img{transform:scale(1.04)}
+.case .tag{position:absolute;left:16px;top:16px;background:#fff;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:500}
+.case .meta{font-size:14px;color:var(--muted)}
+.case h3{font-weight:500;font-size:clamp(20px,1.6vw,24px);letter-spacing:-.025em;line-height:1.15}
+.case p{color:var(--ink-2)}
+.case.soon .img{background:var(--soft);display:grid;place-items:center}
+.case.soon .img::after{content:"";position:absolute;inset:14px;border:1.5px dashed rgba(14,14,16,.16);border-radius:12px}
+.case.soon .img span{font-size:20px;font-weight:500;color:var(--muted)}
+.case.soon h3,.case.soon .meta{color:var(--muted)}
+.imp-foot{margin-top:54px}
+
+/* connections */
+.conn-sec{background:var(--soft)}
+.conn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.conn-sec .logo-note{margin-top:16px}
+.conn-sec .statement{margin-top:48px}
+.cn{position:relative;border-radius:22px;padding:28px;display:flex;flex-direction:column;background:#fff;border:1px solid transparent;transition:border-color .5s,box-shadow .5s var(--ease)}
+.cn:hover{border-color:rgba(154,79,159,.25);box-shadow:0 30px 60px -40px rgba(49,39,131,.35)}
+.cn .tp{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+.cn .tp i{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .4s}
+.cn .tp i svg{width:15px;height:15px}
+.cn:hover .tp i{background:var(--g-light);color:#fff;border-color:transparent;transform:rotate(-45deg)}
+.cn h3{font-weight:500;font-size:clamp(22px,1.8vw,28px);letter-spacing:-.02em;line-height:1.15;margin-top:36px;min-height:2.3em}
+.cn .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cn .tags span{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--soft)}
+.cn .tags span.s{background:none;border:1px dashed rgba(14,14,16,.25);color:var(--muted)}
+.cn-logos{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
+.cn-logos li{position:relative;aspect-ratio:3/2;display:grid;place-items:center;padding:16% 14%;border-radius:12px;background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s}
+.cn-logos li::after{content:"";position:absolute;left:14%;right:14%;bottom:8px;height:2px;border-radius:2px;background:var(--g-light);transform:scaleX(0);transition:transform .5s var(--ease)}
+.cn-logos img{width:100%;height:100%;object-fit:contain;transition:transform .6s var(--ease)}
+.cn-logos li:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 16px 30px -18px rgba(49,39,131,.45)}
+.cn-logos li:hover::after{transform:scaleX(1)}
+.cn-logos li:hover img{transform:scale(1.06)}
+.statement{margin-top:56px;font-size:clamp(21px,1.9vw,30px);line-height:1.2;letter-spacing:-.025em;font-weight:500;max-width:980px}
+.statement .ul{background:var(--g-light) 0 94%/0 3px no-repeat;transition:background-size 1.2s var(--ease) .3s}
+.statement.in .ul{background-size:100% 3px}
+
+/* closing */
+.closing{position:relative;overflow:hidden}
+.closing .h-xl{font-weight:500;font-size:clamp(44px,5.6vw,96px);line-height:1.04;letter-spacing:-.028em}
+.closing .h-xl .it{font-size:1em}
+.cl-row{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-top:44px}
+.closing p{font-size:19px;color:rgba(255,255,255,.72);max-width:520px}
+.mails{display:flex;gap:40px;flex-wrap:wrap;margin-top:36px;font-size:15px}
+.mails small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.mails a{border-bottom:1px solid rgba(255,255,255,.35)}
+
+footer{background:var(--ink);color:rgba(255,255,255,.62);font-size:15px;padding-bottom:30px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr 1.2fr;gap:40px;padding-top:60px;border-top:1px solid rgba(255,255,255,.12)}
+footer .slog{font-size:28px;line-height:1.1;color:#fff;margin-top:22px;letter-spacing:-.02em;font-weight:500}
+
+footer h4{font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:16px}
+footer ul{list-style:none;display:grid;gap:10px}
+footer a:hover{color:#fff}
+footer .lb{display:block;font-size:13px;color:rgba(255,255,255,.38)}
+.f-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:70px;font-size:13px;color:rgba(255,255,255,.4)}
+
+/* search */
+/* clients */
+.clients{background:#fff}
+.logos{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.logos li{border-right:1px solid var(--line);border-bottom:1px solid var(--line);aspect-ratio:3/2;display:grid;place-items:center;padding:13% 17%;background:#fff}
+.logos img{width:100%;height:100%;object-fit:contain;filter:grayscale(1) contrast(1.1);opacity:.55;mix-blend-mode:multiply;transition:filter .45s,opacity .45s,transform .6s var(--ease)}
+.logos li:hover img{filter:none;opacity:1;transform:scale(1.05)}
+.logo-note{margin-top:18px;font-size:13px;color:var(--muted)}
+/* team */
+.team{background:#fff}
+.people{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:32px 24px}
+.people img{width:100%;max-width:148px;aspect-ratio:1;border-radius:50%;object-fit:cover;filter:grayscale(1);transition:filter .5s,transform .7s var(--ease)}
+.people li:hover img{filter:none;transform:translateY(-6px)}
+.people h3{font-size:18px;font-weight:500;letter-spacing:-.01em;margin-top:18px;line-height:1.3}
+.people span{font-size:14px;color:var(--muted)}
+.team-foot{margin-top:52px}
+.so{position:fixed;inset:0;z-index:100;background:rgba(250,250,248,.97);display:none;padding:110px var(--gut) 40px;overflow:auto}
+.so.open{display:block;animation:fd .3s var(--ease)}
+@keyframes fd{from{opacity:0}}
+.so-in{max-width:820px;margin:0 auto}
+.so-bar{display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.so-bar svg{width:26px;height:26px;flex:none}
+.so input{flex:1;background:none;border:0;outline:0;font-family:var(--sans);font-weight:500;font-size:clamp(28px,4vw,48px);letter-spacing:-.03em;color:var(--ink)}
+.so .x{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:22px}
+.so-hint{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.so-hint button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font-size:14px}
+.so-res a{display:block;padding:20px 0;border-bottom:1px solid var(--line)}
+.so-res small{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.so-res h5{font-size:24px;font-weight:500;letter-spacing:-.02em;margin:2px 0}
+.so-res p{color:var(--ink-2);font-size:15px}
+.so-res mark{background:#f3d9ea;color:inherit;border-radius:3px;padding:0 2px}
+.so-empty{padding:40px 0;font-size:19px}
+.so-empty a{display:inline-flex;margin-top:18px}
+
+.drawer{position:fixed;inset:0;z-index:55;background:var(--bg);color:var(--ink);padding:110px var(--gut) 40px;display:flex;flex-direction:column;transform:translateY(-102%);transition:transform .7s var(--ease)}
+.drawer.open{transform:none}
+.drawer a{font-size:clamp(32px,8vw,52px);font-weight:500;letter-spacing:-.03em;padding:8px 0;border-bottom:1px solid var(--line)}
+body.menu-open header{color:var(--ink)}
+body.menu-open header .logo img{filter:invert(1)}
+
+.draft{position:fixed;left:14px;bottom:14px;z-index:70;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:rgba(14,14,16,.8);color:#fff}
+
+@media (max-width:1100px){
+  .menu{display:none}.burger{display:block}.sbtn span{display:none}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .nav{height:72px}.nav .btn,.logo .zh{display:none}
+  .hero .row{grid-template-columns:1fr}
+  .kw{flex-direction:row;justify-content:flex-start;gap:16px;font-size:11px;order:-1}
+  .kw li::before{display:none}
+  .hero-bar .lbl{display:none}
+  .sec-top{grid-template-columns:1fr;margin-bottom:40px}.sec-top p{justify-self:start}
+  .shore-c{position:static;display:inline-flex;margin:0 0 12px;padding:10px 14px 10px 10px;gap:10px}.shore-c.r{float:none;flex-direction:row;text-align:left;padding:10px 14px 10px 10px}.shore-c .flag{width:36px;height:36px;font-size:10px}.shore-c .time{font-size:20px}.br-shores{display:flex;flex-wrap:wrap;gap:10px}
+  .svc{grid-template-columns:44px 1fr 40px;grid-template-areas:"no t ar" ". d ar";row-gap:8px}.svc .ar{width:40px;height:40px}.svc.on h3{transform:none}
+  .stg{grid-template-columns:1fr;text-align:left;gap:8px}.st{padding:16px 0 0}#lead{display:none}
+  .cases{grid-template-columns:1fr}
+  .logos{grid-template-columns:repeat(3,minmax(0,1fr))}.people{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .conn{grid-template-columns:1fr}.cn h3{min-height:0;margin-top:24px}
+  .cl-row{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:480px){.people{grid-template-columns:repeat(2,minmax(0,1fr))}.f-grid{grid-template-columns:1fr}.hero .cta .btn,.hero .cta .ghost{flex:1;justify-content:center}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv,.up{opacity:1;transform:none}.hero h1 .ln>span,.rise .w>span{transform:none}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="./" class="logo" aria-label="MultiMarketing home"><img src="../assets/logo.png" alt="MultiMarketing"></a>
+    <nav class="menu" aria-label="Main"><a href="/our-story">Our Story</a><a href="/our-expertise">Our Expertise</a><a href="/our-work">Our Work</a><a href="/our-connections">Our Connections</a><a href="/grow-with-us">Grow With Us</a></nav>
+    <div class="nav-r">
+      <button class="sbtn" id="openSearch" aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
+      <a class="btn" href="/lets-connect">Let’s Connect <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+      <button class="burger" id="burger" aria-label="Open menu"><b></b><b></b></button>
+    </div>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Mobile menu"><a href="/our-story">Our Story</a><a href="/our-expertise">Our Expertise</a><a href="/our-work">Our Work</a><a href="/our-connections">Our Connections</a><a href="/grow-with-us">Grow With Us</a><a href="/lets-connect">Let’s Connect</a></nav>
+
+<main>
+<!-- HERO: Auckland film loop -->
+<section class="hero" aria-label="Introduction">
+  <video muted playsinline preload="auto" data-label="Waitematā Harbour · City of Sails"><source src="https://videos.pexels.com/video-files/20791387/20791387-hd_1920_1080_60fps.mp4" type="video/mp4"></video>
+  <video muted playsinline preload="none" data-label="Auckland CBD · Sky Tower"><source src="https://videos.pexels.com/video-files/30833643/13185804_1920_1080_24fps.mp4" type="video/mp4"></video>
+  <video muted playsinline preload="none" data-label="Tāmaki River · Dusk"><source src="https://videos.pexels.com/video-files/20761227/20761227-hd_1280_720_60fps.mp4" type="video/mp4"></video>
+  <div class="shade"></div>
+  <div class="wrap hero-in">
+    <div class="kicker up u1" style="color:rgba(255,255,255,.75);margin-bottom:22px">Cross-Cultural Marketing · Auckland</div>
+    <h1 aria-label="Trust Creates Possibilities.">
+      <span class="ln"><span>Trust Creates</span></span>
+      <span class="ln"><span class="it">Possibilities.</span></span>
+    </h1>
+    <div class="row">
+      <div>
+        <p class="lead up u1">We don’t just connect brands with markets. We connect people, expertise and opportunities, and build the trust that makes lasting partnerships possible.</p>
+        <div class="cta up u2">
+          <a class="btn w" href="/lets-connect">Let’s Connect <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+        </div>
+      </div>
+      <ul class="kw up u3" aria-label="Culture, Strategy, Connections"><li>Culture</li><li>Strategy</li><li>Connections</li></ul>
+    </div>
+    <div class="hero-bar up u3">
+      <span class="lbl">Auckland ⇄ China · Since 2009</span>
+      <div class="clips" id="clips"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE BRING: the Harbour Bridge drawn at night from both shores; the three strategies hang from its piers -->
+<section class="sec bridge" id="bring">
+  <div class="wrap">
+    <div class="br-top">
+      <div class="kicker rv">What we bring</div>
+      <h2 class="h2 rise" style="margin-top:18px">Two markets. <span class="it gt">One</span> bridge.</h2>
+      <p class="rv d1">Since 2009 we have stood between New Zealand and Chinese-speaking audiences, so brands on either side can be understood on the other.</p>
+      <div class="br-diff rv d2"><i></i><span id="tdiff" data-t="{h} hours apart · one team"></span></div>
+    </div>
+    <div class="br-art">
+      <div class="br-shores">
+        <div class="shore-c l"><span class="flag">NZ</span><div><small>Aotearoa</small><strong>New Zealand</strong><b class="time" data-tz="Pacific/Auckland">--:--</b></div></div>
+        <div class="shore-c r"><span class="flag">CN</span><div><small>Zhōngguó</small><strong>China</strong><b class="time" data-tz="Asia/Shanghai">--:--</b></div></div>
+      </div>
+      <svg id="brSvg" viewBox="0 50 1200 350" data-apex="TRUST" role="img" aria-label="Auckland Harbour Bridge drawn from both shores, meeting in the middle">
+        <defs>
+          <linearGradient id="gA" gradientUnits="userSpaceOnUse" x1="420" y1="0" x2="780" y2="0"><stop offset="0" stop-color="#312783"/><stop offset=".5" stop-color="#e2739f"/><stop offset="1" stop-color="#312783"/></linearGradient>
+          <linearGradient id="gL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a4f9f" stop-opacity=".7"/><stop offset="1" stop-color="#9a4f9f" stop-opacity=".05"/></linearGradient>
+          <linearGradient id="fadeG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+          <mask id="fade" maskUnits="userSpaceOnUse" x="0" y="282" width="1200" height="120"><rect x="0" y="282" width="1200" height="120" fill="url(#fadeG)"/></mask>
+        </defs>
+        <linearGradient id="seaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9c6e6" stop-opacity=".55"/><stop offset="1" stop-color="#f4ecf4" stop-opacity="0"/></linearGradient>
+        <rect class="sea" x="-400" y="282" width="2000" height="118" fill="url(#seaG)"/>
+        <g id="br"></g>
+        <g mask="url(#fade)"><use href="#br" class="refl" transform="matrix(1 0 0 -1 0 564)"/></g>
+        <g id="shim"></g>
+        <g id="lead"></g>
+      </svg>
+    </div>
+    <div class="stg">
+      <div class="st"><span class="n">01</span><h3>Cross-Cultural Expertise That Builds Trust.</h3><p>Bridging New Zealand and China with deep market understanding and credibility.</p></div>
+      <div class="st"><span class="n">02</span><h3>Strategic Marketing That Drives Lasting Impact.</h3><p>From brand strategy and communications to market activation and growth.</p></div>
+      <div class="st"><span class="n">03</span><h3>A Connected Ecosystem That Creates More Opportunities.</h3><p>Bringing together creative expertise, construction relationships and media platforms.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="sec dark" id="expertise">
+  <div class="wrap">
+    <div class="sec-top">
+      <div><div class="kicker rv">Our Expertise</div><h2 class="h2 rise" style="margin-top:18px">Expertise That Moves Brands <span class="it gt">Forward</span></h2></div>
+      <p class="rv d1">We bring local market understanding and cross-cultural judgement to the way your brand is positioned, communicated and delivered.</p>
+    </div>
+    <div class="exp">
+    <div>
+    <div class="svc-list">
+      <div class="svc rv" data-href="/our-expertise#brand-strategy" tabindex="0"><span class="no">01</span><h3>Cross-Cultural Brand Strategy</h3><p>Define your place in the market and the audience you want to reach.</p><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="bar"></span></div>
+      <div class="svc rv" data-href="/our-expertise#outsourced-marketing" tabindex="0"><span class="no">02</span><h3>Outsourced Marketing</h3><p>Planning and delivery around your priorities.</p><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="bar"></span></div>
+      <div class="svc rv" data-href="/our-expertise#communications" tabindex="0"><span class="no">03</span><h3>Cross-Cultural Communications</h3><p>Stories and campaigns shaped for the people on each side of the cultural divide.</p><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="bar"></span></div>
+      <div class="svc rv" data-href="/our-expertise#market-entry" tabindex="0"><span class="no">04</span><h3>Market Entry and Activation</h3><p>Local insight and practical New Zealand delivery.</p><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="bar"></span></div>
+      <div class="svc rv" data-href="/our-expertise#events" tabindex="0"><span class="no">05</span><h3>Events and Industry Connections</h3><p>Purposeful opportunities to engage.</p><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="bar"></span></div>
+    </div>
+    <div class="exp-foot rv"><a class="btn w" href="/our-expertise">Explore Our Expertise <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="sec" id="impact">
+  <div class="wrap">
+    <div class="sec-top">
+      <div><div class="kicker rv">Our Work</div><h2 class="h2 rise" style="margin-top:18px">Stories of <span class="it gt">Trust</span></h2></div>
+      <p class="rv d1">Explore how strategic thinking, cross-cultural understanding and practical delivery come together in our client work.</p>
+    </div>
+    <div class="cases">
+      <a class="case big rv" href="/our-work/james-hardie">
+        <div class="img"><img src="../assets/JH.png" alt="James Hardie Chinese-language website on desktop and mobile"><span class="tag">Cross-Cultural Communications</span></div>
+        <div class="meta">James Hardie · Project title / service type to confirm</div>
+        <h3>Building awareness among Chinese-speaking homebuyers, investors and builders</h3>
+        <p>Building awareness of and preference for James Hardie among Chinese-speaking homebuyers, investors and builders in New Zealand.</p>
+      </a>
+      <a class="case small soon rv d1" href="/our-work"><div class="img"><span>Case study coming soon</span></div><div class="meta">[Client name] · [Project title / service type]</div><h3>[Approved project title]</h3></a>
+      <a class="case small soon rv d2" href="/our-work"><div class="img"><span>Case study coming soon</span></div><div class="meta">[Client name] · [Project title / service type]</div><h3>[Approved project title]</h3></a>
+    </div>
+    <div class="imp-foot rv"><a class="tlink" href="/our-work">View All Work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</section>
+
+<!-- CONNECTIONS -->
+<section class="sec conn-sec" id="connections">
+  <div class="wrap">
+    <div class="sec-top"><div><div class="kicker rv">Our Network</div><h2 class="h2 rise" style="margin-top:18px">Our <span class="it gt">Connections</span></h2></div><p class="rv d1">Clients, creative teams and media platforms we work with, brought together for each brief.</p></div>
+    <div class="conn">
+      <div class="cn rv" data-href="/our-connections#creative-partners"><div class="tp"><span>01</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></div><h3>Creative Partners</h3><div class="tags"><span>Design</span><span>Film</span><span>Digital</span><span class="s">Future Collective · soon</span></div><ul class="cn-logos"><li><img src="../assets/clients/hardie.png" alt="James Hardie" loading="lazy"></li><li><img src="../assets/clients/placemakers.png" alt="PlaceMakers" loading="lazy"></li><li><img src="../assets/clients/barfoot.jpg" alt="Barfoot &amp; Thompson" loading="lazy"></li><li><img src="../assets/clients/icbc.png" alt="ICBC" loading="lazy"></li><li><img src="../assets/clients/nzcbia.png" alt="NZCBIA" loading="lazy"></li><li><img src="../assets/clients/ema.png" alt="EMA" loading="lazy"></li></ul></div>
+      <div class="cn rv d1" data-href="/our-connections#property-construction-partners"><div class="tp"><span>02</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></div><h3>Property &amp; Construction Partners</h3><div class="tags"><span>Clients</span><span>Industry collaborators</span></div><ul class="cn-logos"><li><img src="../assets/clients/hardie.png" alt="James Hardie" loading="lazy"></li><li><img src="../assets/clients/placemakers.png" alt="PlaceMakers" loading="lazy"></li><li><img src="../assets/clients/barfoot.jpg" alt="Barfoot &amp; Thompson" loading="lazy"></li><li><img src="../assets/clients/icbc.png" alt="ICBC" loading="lazy"></li><li><img src="../assets/clients/nzcbia.png" alt="NZCBIA" loading="lazy"></li><li><img src="../assets/clients/ema.png" alt="EMA" loading="lazy"></li></ul></div>
+      <div class="cn rv d2" data-href="/our-connections#media-partners"><div class="tp"><span>03</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></div><h3>Media Partners</h3><div class="tags"><span>YIJU New Zealand</span><span>Partner platforms</span></div><ul class="cn-logos"><li><img src="../assets/clients/hardie.png" alt="James Hardie" loading="lazy"></li><li><img src="../assets/clients/placemakers.png" alt="PlaceMakers" loading="lazy"></li><li><img src="../assets/clients/barfoot.jpg" alt="Barfoot &amp; Thompson" loading="lazy"></li><li><img src="../assets/clients/icbc.png" alt="ICBC" loading="lazy"></li><li><img src="../assets/clients/nzcbia.png" alt="NZCBIA" loading="lazy"></li><li><img src="../assets/clients/ema.png" alt="EMA" loading="lazy"></li></ul></div>
+    </div>
+    <p class="logo-note rv">Logos shown as placeholders; each group will get its own approved logos.</p>
+    <p class="statement rv">Our network connects the people, organisations and platforms that can contribute to <span class="ul">the right brief.</span></p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="sec dark closing">
+  <div class="wrap">
+    <div class="kicker rv">Let’s put our expertise to work</div>
+    <h2 class="h-xl rise" style="margin-top:22px">Let’s Create What’s <span class="it gt">Next.</span></h2>
+    <div class="cl-row">
+      <div>
+        <p class="rv d1">Tell us what you want to achieve. Let’s explore how our cross-cultural expertise can help.</p>
+        <div class="mails rv d2"><div><small>General Enquiry</small><a href="mailto:info@multimarketing.co.nz">info@multimarketing.co.nz</a></div><div><small>Business Enquiry</small><a href="mailto:pauline@multimarketing.co.nz">pauline@multimarketing.co.nz</a></div></div>
+      </div>
+      <div class="rv d2"><a class="btn w" href="/lets-connect">Let’s Connect <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div><a href="./" class="logo" aria-label="MultiMarketing home"><img src="../assets/logo.png" alt="MultiMarketing"></a><p class="slog">Trust Creates <span class="it gt">Possibilities.</span></p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="/our-story">Our Story</a></li><li><a href="/our-expertise">Our Expertise</a></li><li><a href="/our-work">Our Work</a></li><li><a href="/our-connections">Our Connections</a></li><li><a href="our-team.html">Our Team</a></li><li><a href="/grow-with-us">Grow With Us</a></li><li><a href="/lets-connect">Let’s Connect</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><span class="lb">General Enquiry</span><a href="mailto:info@multimarketing.co.nz">info@multimarketing.co.nz</a></li><li><span class="lb">Business Enquiry</span><a href="mailto:pauline@multimarketing.co.nz">pauline@multimarketing.co.nz</a></li></ul></div>
+      <div><h4>Head Office</h4><a href="https://www.google.com/maps/search/?api=1&query=54+Ponsonby+Road+Grey+Lynn+Auckland+1011" target="_blank" rel="noopener">54 Ponsonby Road, Grey Lynn<br>Auckland 1011, New Zealand ↗</a></div>
+    </div>
+    <div class="f-bot"><span>© <span id="yr"></span> MultiMarketing. All rights reserved.</span><a href="/privacy-notice">Privacy Notice</a></div>
+  </div>
+</footer>
+
+<div class="so" id="so" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="so-in">
+    <div class="so-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search…" aria-label="Search" autocomplete="off"><button class="x" id="closeSearch" aria-label="Close search">×</button></div>
+    <div class="so-hint" id="hint"><button>Brand strategy</button><button>WeChat</button><button>Market entry</button><button>James Hardie</button><button>YIJU</button></div>
+    <div class="so-res" id="res" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="draft">Homepage v2 · draft · EN</div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+setTimeout(()=>document.body.classList.add('go'),120);
+
+/* hero film: crossfade between Auckland clips */
+const vids=$$('.hero video'),clips=$('#clips');let cur=-1,timer;
+vids.forEach((v,i)=>{const b=document.createElement('button');b.innerHTML=`<i></i><span class="cl">${String(i+1).padStart(2,'0')}</span>`;b.setAttribute('aria-label','Play clip '+(i+1)+': '+v.dataset.label);b.onclick=()=>show(i);clips.appendChild(b)});
+const lbl=document.createElement('span');lbl.style.marginLeft='8px';lbl.className='lbl';clips.appendChild(lbl);
+function show(i){
+  clearTimeout(timer);
+  const prev=vids[cur];cur=i;const v=vids[i];
+  if(v.preload==='none'){v.preload='auto';v.load()}
+  v.currentTime=0;const p=v.play();if(p)p.catch(()=>{});
+  v.classList.add('on');if(prev&&prev!==v){setTimeout(()=>{prev.classList.remove('on');prev.pause()},900)}
+  [...clips.querySelectorAll('button')].forEach((b,j)=>{b.classList.toggle('on',j===i);const ii=b.querySelector('i');ii.style.animation='none';ii.offsetWidth;ii.style.animation=''});
+  lbl.textContent=v.dataset.label;
+  const nxt=vids[(i+1)%vids.length];if(nxt.preload==='none'){nxt.preload='auto';nxt.load()}
+  if(!reduce)timer=setTimeout(()=>show((i+1)%vids.length),7000);
+}
+show(0);
+
+/* word-split for rising headings (keeps italic spans) */
+$$('.rise').forEach(h=>{
+  const walk=n=>[...n.childNodes].forEach(c=>{
+    if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)|(?=[\u4e00-\u9fff\uff0c\u3002\u3001])/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.append(t);return}const w=document.createElement('span');w.className='w';const s=document.createElement('span');s.textContent=t;w.append(s);f.append(w)});c.replaceWith(f)}
+    else if(c.nodeType===1)walk(c)});
+  walk(h);h.querySelectorAll('.gt').forEach(e=>{if(e.querySelector('.w')){e.classList.remove('gt');e.querySelectorAll('.w>span').forEach(x=>x.classList.add('gt'))}});h.querySelectorAll('.w>span').forEach((s,i)=>s.style.transitionDelay=(i*.06)+'s');
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv,.rise,.statement').forEach(el=>io.observe(el));
+
+/* bridge: a night-time line drawing that builds from both shores once visible (no scroll-jacking) */
+const ns='http://www.w3.org/2000/svg',brg=$('#br'),lead=$('#lead'),shim=$('#shim'),bridge=$('#bring'),sts=$$('.st');
+const D=250,W=282,A0=420,A1=780,M=600,L=60,Rt=1140;
+const sn=x=>Math.sin(Math.PI*(x-A0)/(A1-A0)),yU=x=>244-150*sn(x),yI=x=>246-104*sn(x);
+const mk=(par,tag,at,delay,dur)=>{const e=document.createElementNS(ns,tag);for(const k in at)e.setAttribute(k,at[k]);if(delay!=null)e.style.transitionDelay=delay+'s';if(dur)e.style.transitionDuration=dur+'s';par.append(e);return e};
+const pts=(f,a,b,st)=>{const o=[];for(let x=a;st>0?x<=b+.01:x>=b-.01;x+=st)o.push([x,f(x)]);return o};
+const pl=a=>a.map((q,i)=>(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)).join('');
+mk(brg,'path',{d:`M0 ${W}H1200`,class:'water fd'},0);
+mk(brg,'path',{d:`M0 ${D}H${L}L${L+26} ${W}`,class:'shore fd'},0);
+mk(brg,'path',{d:`M1200 ${D}H${Rt}L${Rt-26} ${W}`,class:'shore fd'},0);
+[200,A0,A1,1000].forEach((x,i)=>mk(brg,'path',{d:`M${x-6} ${D}V${W}M${x+6} ${D}V${W}`,class:'pier fd'},.15+i*.05));
+[[L,A0,1],[Rt,A1,-1]].forEach(([s0,a,dir])=>{
+  mk(brg,'path',{d:`M${s0} ${D}H${M}`,class:'dr deck',pathLength:1},0,1.4);
+  mk(brg,'path',{d:`M${s0+dir*12} 232H${a}`,class:'dr chord',pathLength:1},.3,1.1);
+  const zz=[];for(let x=s0+dir*12,k=0;dir>0?x<=a:x>=a;x+=24*dir,k++)zz.push([x,k%2?232:D]);
+  mk(brg,'path',{d:pl(zz),class:'dr web',pathLength:1},.35,1.2);
+  mk(brg,'path',{d:pl(pts(yU,a,M,5*dir)),class:'dr arch',pathLength:1},.9,1.3);
+  mk(brg,'path',{d:pl(pts(yI,a,M,5*dir)),class:'dr inner',pathLength:1},1,1.3);
+  const w=[];for(let x=a,k=0;dir>0?x<=M+.1:x>=M-.1;x+=15*dir,k++)w.push([x,k%2?yI(x):yU(x)]);
+  mk(brg,'path',{d:pl(w),class:'dr web',pathLength:1},1.1,1.3);
+});
+for(let x=A0+30;x<A1;x+=30)mk(brg,'path',{d:`M${x} ${yI(x).toFixed(1)}V${D}`,class:'hang fd'},1.4+(1-Math.abs(x-M)/180)*.9);
+mk(brg,'circle',{cx:M,cy:yU(M),r:5,class:'apex-ring'});
+mk(brg,'circle',{cx:M,cy:yU(M),r:5,class:'apex'},2.3);
+const tx=mk(brg,'text',{x:M,y:yU(M)-22,'text-anchor':'middle',class:'apex-t fd'},2.4);tx.textContent=$('#brSvg').dataset.apex;
+for(let i=0;i<3;i++){mk(brg,'circle',{cx:0,cy:D-3,r:2.2,class:'car e',style:`animation-delay:${2.8+i*2.3}s`});mk(brg,'circle',{cx:0,cy:D-3,r:2.2,class:'car w',style:`animation-delay:${3.9+i*2.3}s`})}
+[[130,300,40],[520,306,60],[860,298,48],[300,326,70],[700,330,36],[1010,322,56],[440,352,44],[920,356,30]].forEach(([x,y,w],i)=>mk(shim,'path',{d:`M${x} ${y}h${w}`,class:'shim',style:`animation-delay:${2+i*.6}s`}));
+[[200,1.2],[600,2.4],[1000,1.2]].forEach(([x,d])=>mk(lead,'path',{d:`M${x} ${W+10}V400`,class:'dr lead',pathLength:1},d,.8));
+new IntersectionObserver((es,o)=>es.forEach(e=>{if(e.isIntersecting){bridge.classList.add('play');[[0,1300],[2,1300],[1,2700]].forEach(([i,t])=>setTimeout(()=>sts[i].classList.add('on'),reduce?0:t));o.disconnect()}}),{threshold:.25}).observe(bridge);
+
+/* live clocks in both markets */
+const tfmt=tz=>new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+function tick(){const d=new Date();
+  $$('.time[data-tz]').forEach(t=>{const [h,m]=tfmt(t.dataset.tz).format(d).split(':');t.innerHTML=h+'<span class="colon">:</span>'+m});
+  const loc=tz=>new Date(d.toLocaleString('en-US',{timeZone:tz})),diff=Math.round((loc('Pacific/Auckland')-loc('Asia/Shanghai'))/36e5),td=$('#tdiff');td.textContent=td.dataset.t.replace('{h}',diff)}
+tick();setInterval(tick,20000);
+
+/* expertise: list on the left, image on the right follows the active service and auto-advances */
+const svcs=$$('.svc');let ei=0,etimer,hold=false;
+function setSvc(i){ei=i;svcs.forEach((a,j)=>a.classList.toggle('on',j===i));
+  const bar=svcs[i].querySelector('.bar');if(bar){bar.style.animation='none';void bar.offsetWidth;bar.style.animation=hold||reduce?'none':''}
+  clearTimeout(etimer);if(!hold&&!reduce)etimer=setTimeout(()=>setSvc((ei+1)%svcs.length),5000)}
+svcs.forEach((a,i)=>{a.addEventListener('mouseenter',()=>{hold=true;setSvc(i)});a.addEventListener('focus',()=>{hold=true;setSvc(i)})});
+$('.exp').addEventListener('mouseleave',()=>{hold=false;setSvc(ei)});
+setSvc(0);
+
+/* header */
+const hdr=$('#hdr'),dr=$('#drawer');let ly=0;
+function onScroll(){const y=scrollY;hdr.classList.toggle('solid',y>innerHeight*.75);hdr.classList.toggle('hide',y>ly&&y>innerHeight&&!dr.classList.contains('open'));ly=y}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+$('#burger').onclick=()=>{dr.classList.toggle('open');document.body.classList.toggle('menu-open',dr.classList.contains('open'))};
+$('#yr').textContent=new Date().getFullYear();
+
+/* search */
+const IDX=[
+ {t:'Our Story',k:'Page',u:'/our-story',x:'Built on Trust. Driven by Possibilities. Since 2009, we’ve helped brands connect across cultures. Our Belief, Our People, How We Work.'},
+ {t:'Our Expertise',k:'Page',u:'/our-expertise',x:'From Strategy to Lasting Influence. Five services and ways to work together: Ongoing Partnership, Defined Project, Market-Entry Programme.'},
+ {t:'Cross-Cultural Brand Strategy',k:'Service',u:'/our-expertise#brand-strategy',x:'Build a brand that belongs in the market. Audience and cultural insight, market positioning, brand proposition, identity direction.'},
+ {t:'Outsourced Marketing',k:'Service',u:'/our-expertise#outsourced-marketing',x:'Bring planning and delivery into one agreed programme. Campaign planning, content calendars, supplier coordination, reporting.'},
+ {t:'Cross-Cultural Communications',k:'Service',u:'/our-expertise#communications',x:'The right message in the right cultural context. English and Chinese copywriting, localisation, WeChat, Rednote, LinkedIn, video and design.'},
+ {t:'Market Entry and Activation',k:'Service',u:'/our-expertise#market-entry',x:'Turn your New Zealand plans into local action. Audience and channel discovery, local activation, pilot or launch execution.'},
+ {t:'Events and Industry Connections',k:'Service',u:'/our-expertise#events',x:'Brand and product launches, industry gatherings and exhibitions, on-site delivery and content capture.'},
+ {t:'Our Work',k:'Page',u:'/our-work',x:'Relationships That Deliver Results. Selected projects, the role we played and the evidence behind the work.'},
+ {t:'James Hardie',k:'Case study',u:'/our-work/james-hardie',x:'Building awareness of and preference for James Hardie among Chinese-speaking homebuyers, investors and builders in New Zealand.'},
+ {t:'Our Connections',k:'Page',u:'/our-connections',x:'Connecting Markets. Creating Opportunities. Creative Partners, Property & Construction Partners, Media Partners.'},
+ {t:'Creative Partners',k:'Our Connections',u:'/our-connections#creative-partners',x:'Marketing companies, creative teams and independent specialists. Future Collective — coming soon.'},
+ {t:'Property & Construction Partners',k:'Our Connections',u:'/our-connections#property-construction-partners',x:'Construction-sector clients and industry collaborators shaping the built environment.'},
+ {t:'Media Partners',k:'Our Connections',u:'/our-connections#media-partners',x:'YIJU New Zealand, our media and storytelling platform, plus other media partners for visibility and distribution.'},
+ {t:'Grow With Us',k:'Page',u:'/grow-with-us',x:'Great Partnerships Create Greater Possibilities. Bring your expertise, support your clients, build opportunities together.'},
+ {t:'Our Team',k:'Our Story',u:'our-team.html',x:'Pauline Gao, Managing Director. Xilu Wang (Lucy), Lily Deng, Hailey Hou, Libby Liu, Holly Shan.'},
+ {t:'Let’s Connect',k:'Page',u:'/lets-connect',x:'Let’s Talk About Your Business. Enquiry form, info@multimarketing.co.nz, 54 Ponsonby Road, Grey Lynn, Auckland.'}
+];
+const so=$('#so'),q=$('#q'),res=$('#res'),hint=$('#hint');
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hl=(s,w)=>{let o=esc(s);w.forEach(t=>{if(t.length>1)o=o.replace(new RegExp('('+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<mark>$1</mark>')});return o};
+function run(){
+  const v=q.value.trim().toLowerCase();hint.style.display=v?'none':'flex';if(!v){res.innerHTML='';return}
+  const w=v.split(/\s+/);
+  const r=IDX.map(i=>{const h=(i.t+' '+i.x).toLowerCase();let s=0;w.forEach(t=>{if(i.t.toLowerCase().includes(t))s+=3;if(h.includes(t))s++});return{...i,s,ok:w.every(t=>h.includes(t))}}).filter(i=>i.ok).sort((a,b)=>b.s-a.s);
+  res.innerHTML=r.length?r.map(i=>`<a href="${i.u}"><small>${i.k}</small><h5>${hl(i.t,w)}</h5><p>${hl(i.x,w)}</p></a>`).join('')
+   :`<div class="so-empty">No results found. Try another search or explore our expertise.<br><a class="tlink" href="/our-expertise">Explore Our Expertise</a></div>`;
+}
+q.addEventListener('input',run);
+hint.querySelectorAll('button').forEach(b=>b.onclick=()=>{q.value=b.textContent;run();q.focus()});
+const openS=()=>{so.classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>q.focus(),50)};
+const closeS=()=>{so.classList.remove('open');document.body.style.overflow=''};
+$('#openSearch').onclick=openS;$('#closeSearch').onclick=closeS;
+addEventListener('keydown',e=>{if(e.key==='Escape')closeS();if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openS()}});
+</script>
+</body>
+</html>
