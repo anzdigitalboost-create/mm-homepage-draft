@@ -178,15 +178,18 @@ header.solid .lang a.on,body.menu-open .lang a.on{background:var(--ink);color:#f
 .dark{background:var(--ink);color:#fff}
 .dark .kicker{color:rgba(255,255,255,.5)}
 .dark .sec-top p{color:rgba(255,255,255,.68)}
+.exp-sec{background:#f4ecf4;padding:0 0 clamp(70px,8vw,120px)}
+.exp-panel{background:#1a1920;border-radius:36px;padding:clamp(40px,5.5vw,88px) clamp(26px,4.5vw,72px)}
 .exp{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.7fr);gap:clamp(40px,5vw,88px);align-items:start}
 .exp-intro{position:sticky;top:120px}
+.exp-panel .kicker{color:rgba(255,255,255,.5)}
 .exp-intro p{margin-top:24px;color:rgba(255,255,255,.68);font-size:18px;max-width:380px}
 .svc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .svc{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:260px;padding:26px 26px 28px;border-radius:22px;overflow:hidden;cursor:default;
-  border:1px solid transparent;background:linear-gradient(#16161b,#16161b) padding-box,linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.1)) border-box;transition:background .6s var(--ease),transform .6s var(--ease)}
+  border:1px solid transparent;background:linear-gradient(#24232b,#24232b) padding-box,linear-gradient(rgba(255,255,255,.08),rgba(255,255,255,.08)) border-box;transition:background .6s var(--ease),transform .6s var(--ease)}
 .svc::before{content:"";position:absolute;right:-30%;top:-40%;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(194,106,170,.22),rgba(194,106,170,0));opacity:0;transition:opacity .7s}
 .svc:focus-visible{outline:1px solid rgba(255,255,255,.4);outline-offset:4px}
-.svc.on{background:linear-gradient(#1b1a22,#1b1a22) padding-box,var(--g-dark) border-box;transform:translateY(-4px)}
+.svc.on{background:linear-gradient(#2a2832,#2a2832) padding-box,var(--g-dark) border-box;transform:translateY(-4px)}
 .svc.on::before{opacity:1}
 .sv-top{position:relative;display:flex;justify-content:space-between;align-items:flex-start}
 .svc .ic{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;background:rgba(255,255,255,.06);color:#fff;transition:background .6s var(--ease)}
@@ -204,14 +207,12 @@ header.solid .lang a.on,body.menu-open .lang a.on{background:var(--ink);color:#f
 .svc p{color:rgba(255,255,255,.62);font-size:15px;line-height:1.5}
 .svc .bar{position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--g-dark);transform:scaleX(0);transform-origin:left}
 .svc.on .bar{transform:scaleX(1);animation:fill 5s linear}
-.svc-art{min-height:260px;border-radius:22px;border:1px dashed rgba(255,255,255,.16);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;padding:26px}
-.svc-art svg{width:78%;max-width:260px;overflow:visible}
-.svc-art circle{fill:none;stroke:rgba(255,255,255,.5);stroke-width:1.2}
-.svc-art .vf{fill:url(#vg);stroke:none;opacity:.85}
-.svc-art .vl{animation:vl 6s ease-in-out infinite}.svc-art .vr{animation:vr 6s ease-in-out infinite}
-@keyframes vl{50%{transform:translateX(-8px)}}@keyframes vr{50%{transform:translateX(8px)}}
-.svc-art text{fill:rgba(255,255,255,.7);font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.2em}
-.svc-art p{font-size:18px;font-weight:500;letter-spacing:-.01em;text-align:center}
+.svc-cta{position:relative;min-height:260px;padding:28px;border-radius:22px;display:flex;flex-direction:column;justify-content:space-between;gap:24px;overflow:hidden;color:#fff;background:linear-gradient(135deg,#312783 0%,#7a3f8f 55%,#c45f98 100%)}
+.svc-cta::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(255,255,255,.25);box-shadow:0 0 0 40px rgba(255,255,255,.05),0 0 0 80px rgba(255,255,255,.04);transition:transform 1s var(--ease)}
+.svc-cta:hover::after{transform:scale(1.15)}
+.svc-cta .k{position:relative;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.svc-cta h3{position:relative;font-weight:500;font-size:clamp(21px,1.7vw,26px);line-height:1.2;letter-spacing:-.015em;max-width:15em}
+.svc-cta .btn{position:relative;align-self:flex-start;height:50px}
 .exp-media{position:sticky;top:110px}
 .exp-media .frame{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:#1b1b22}
 .exp-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .9s ease,transform 1.6s var(--ease)}
@@ -237,25 +238,29 @@ header.solid .lang a.on,body.menu-open .lang a.on{background:var(--ink);color:#f
 .imp-foot{margin-top:54px}
 
 /* connections */
-.conn-sec{background:var(--soft)}
-.conn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto 1fr auto;column-gap:18px}
+.imp-sec{background:#fff}
+.conn-sec{background:#f1eef4}
+.conn{border-top:1px solid rgba(14,14,16,.14)}
 .conn-sec .logo-note{margin-top:16px}
 .conn-sec .statement{margin-top:48px}
-.cn{position:relative;border-radius:22px;padding:28px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;background:#fff;border:1px solid transparent;transition:border-color .5s,box-shadow .5s var(--ease)}
-.cn:hover{border-color:rgba(154,79,159,.25);box-shadow:0 30px 60px -40px rgba(49,39,131,.35)}
-.cn .tp{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
-.cn .tp i{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .4s}
+.cn{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr) minmax(0,1.55fr) 48px;grid-template-areas:"no t lg ar" ". tg lg ar";column-gap:clamp(20px,3vw,44px);align-items:center;padding:clamp(30px,3vw,44px) 0;border-bottom:1px solid rgba(14,14,16,.14)}
+.cn::before{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--g-light);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--ease)}
+.cn:hover::before{transform:scaleX(1)}
+.cn .tp{display:contents}
+.cn .tp span{grid-area:no;align-self:end;padding-bottom:7px;font-size:14px;letter-spacing:.1em;color:var(--muted)}
+.cn .tp i{grid-area:ar;width:46px;height:46px;border-radius:50%;border:1px solid rgba(14,14,16,.16);display:grid;place-items:center;transition:all .45s var(--ease)}
 .cn .tp i svg{width:15px;height:15px}
 .cn:hover .tp i{background:var(--g-light);color:#fff;border-color:transparent;transform:rotate(-45deg)}
-.cn h3{font-weight:500;font-size:clamp(22px,1.8vw,28px);letter-spacing:-.02em;line-height:1.15;margin-top:36px;align-self:start}
-.cn .tags{display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px;margin-top:14px}
-.cn .tags span{font-size:13px;padding:5px 12px;border-radius:999px;background:var(--soft)}
+.cn h3{grid-area:t;align-self:end;font-weight:500;font-size:clamp(24px,2.1vw,32px);letter-spacing:-.022em;line-height:1.12;transition:transform .6s var(--ease)}
+.cn:hover h3{transform:translateX(6px)}
+.cn .tags{grid-area:tg;align-self:start;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cn .tags span{font-size:13px;padding:5px 12px;border-radius:999px;background:#fff}
 .cn .tags span.s{background:none;border:1px dashed rgba(14,14,16,.25);color:var(--muted)}
-.cn-logos{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
-.cn-logos li{position:relative;aspect-ratio:3/2;display:grid;place-items:center;padding:16% 14%;border-radius:12px;background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s}
-.cn-logos li::after{content:"";position:absolute;left:14%;right:14%;bottom:8px;height:2px;border-radius:2px;background:var(--g-light);transform:scaleX(0);transition:transform .5s var(--ease)}
+.cn-logos{grid-area:lg;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.cn-logos li{position:relative;aspect-ratio:2/1;display:grid;place-items:center;padding:10% 14%;border-radius:12px;background:#fff;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.cn-logos li::after{content:"";position:absolute;left:18%;right:18%;bottom:6px;height:2px;border-radius:2px;background:var(--g-light);transform:scaleX(0);transition:transform .5s var(--ease)}
 .cn-logos img{width:100%;height:100%;object-fit:contain;transition:transform .6s var(--ease)}
-.cn-logos li:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 16px 30px -18px rgba(49,39,131,.45)}
+.cn-logos li:hover{transform:translateY(-4px);box-shadow:0 16px 30px -18px rgba(49,39,131,.45)}
 .cn-logos li:hover::after{transform:scaleX(1)}
 .cn-logos li:hover img{transform:scale(1.06)}
 .statement{margin-top:56px;font-size:clamp(21px,1.9vw,30px);line-height:1.2;letter-spacing:-.025em;font-weight:500;max-width:980px}
@@ -263,14 +268,23 @@ header.solid .lang a.on,body.menu-open .lang a.on{background:var(--ink);color:#f
 .statement.in .ul{background-size:100% 3px}
 
 /* closing */
-.closing{position:relative;overflow:hidden}
-.closing .h-xl{font-weight:500;font-size:clamp(44px,5.6vw,96px);line-height:1.04;letter-spacing:-.028em}
+.closing{background:#fff}
+.cl-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,100px);align-items:center}
+.closing .h-xl{font-weight:500;font-size:clamp(40px,4.4vw,72px);line-height:1.04;letter-spacing:-.028em}
 .closing .h-xl .it{font-size:1em}
-.cl-row{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-top:44px}
-.closing p{font-size:19px;color:rgba(255,255,255,.72);max-width:520px}
-.mails{display:flex;gap:40px;flex-wrap:wrap;margin-top:36px;font-size:15px}
-.mails small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45)}
-.mails a{border-bottom:1px solid rgba(255,255,255,.35)}
+.closing .cl-l p{margin-top:24px;font-size:18px;color:var(--ink-2);max-width:440px}
+.cl-form{display:grid;gap:16px;padding:clamp(26px,3vw,40px);border-radius:26px;background:var(--bg);border:1px solid var(--line)}
+.cl-form .f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cl-form label span{display:block;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cl-form input,.cl-form select,.cl-form textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;outline:0;transition:border-color .3s,box-shadow .3s}
+.cl-form textarea{resize:vertical;min-height:110px}
+.cl-form input:focus,.cl-form select:focus,.cl-form textarea:focus{border-color:#9a4f9f;box-shadow:0 0 0 4px rgba(154,79,159,.12)}
+.cl-form .f-act{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:6px}
+.cl-form .f-act small{font-size:13px;color:var(--muted)}
+.cl-form button{border:0;cursor:pointer;font-family:inherit}
+.cl-done{padding:40px 10px;text-align:center}
+.cl-done h3{font-weight:500;font-size:26px;letter-spacing:-.02em}
+.cl-done p{color:var(--ink-2);margin-top:8px}
 
 footer{background:var(--ink);color:rgba(255,255,255,.62);font-size:15px;padding-bottom:30px}
 .f-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr 1.2fr;gap:40px;padding-top:60px;border-top:1px solid rgba(255,255,255,.12)}
@@ -336,12 +350,12 @@ body.menu-open header .logo img{filter:invert(1)}
   .hero-bar .lbl{display:none}
   .sec-top{grid-template-columns:1fr;margin-bottom:40px}.sec-top p{justify-self:start}
   .shore-c{position:static;display:inline-flex;margin:0 0 12px;padding:10px 14px 10px 10px;gap:10px}.shore-c.r{float:none;flex-direction:row;text-align:left;padding:10px 14px 10px 10px}.shore-c .flag{width:36px;height:36px;font-size:10px}.shore-c .time{font-size:20px}.br-shores{display:flex;flex-wrap:wrap;gap:10px}
-  .exp{grid-template-columns:1fr}.exp-intro{position:static}.svc-grid{grid-template-columns:1fr}.svc{min-height:0;gap:28px}.svc-art{display:none}
+  .exp{grid-template-columns:1fr}.exp-intro{position:static}.svc-grid{grid-template-columns:1fr}.svc{min-height:0;gap:28px}.svc-cta{min-height:0}.exp-panel{border-radius:24px}
   .stg{grid-template-columns:1fr;text-align:left;gap:8px}.st{padding:16px 0 0}#lead{display:none}
   .cases{grid-template-columns:1fr}
   .logos{grid-template-columns:repeat(3,minmax(0,1fr))}.people{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .conn{grid-template-columns:1fr;grid-template-rows:none;row-gap:18px}.cn{display:flex;flex-direction:column}.cn h3{margin-top:24px}
-  .cl-row{grid-template-columns:1fr}
+  .cn{grid-template-columns:1fr auto;grid-template-areas:"no ar" "t t" "tg tg" "lg lg";row-gap:0}.cn h3{margin-top:10px}.cn-logos{margin-top:22px}
+  .cl-grid{grid-template-columns:1fr}.cl-form .f2{grid-template-columns:1fr}
   .f-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:480px){.people{grid-template-columns:repeat(2,minmax(0,1fr))}.f-grid{grid-template-columns:1fr}.hero .cta .btn,.hero .cta .ghost{flex:1;justify-content:center}}
@@ -430,8 +444,9 @@ body.menu-open header .logo img{filter:invert(1)}
 </section>
 
 <!-- EXPERTISE -->
-<section class="sec dark" id="expertise">
+<section class="sec exp-sec" id="expertise">
   <div class="wrap">
+  <div class="exp-panel dark">
     <div class="exp">
       <div class="exp-intro">
         <div class="kicker rv">Our Expertise</div><h2 class="h2 rise" style="margin-top:18px">Expertise That Moves Brands <span class="it gt">Forward</span></h2>
@@ -444,20 +459,15 @@ body.menu-open header .logo img{filter:invert(1)}
         <div class="svc rv d2" data-href="/our-expertise#communications" tabindex="0"><div class="sv-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5h12a2 2 0 0 1 2 2V13a2 2 0 0 1-2 2H9l-4 3.5V15H3a2 2 0 0 1-2-2V7.5a2 2 0 0 1 2-2z"/><path d="M19 9.5h1.5a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H19v3l-3.5-3H12"/></svg></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div><div class="sv-txt"><span class="no">03</span><h3>Cross-Cultural Communications</h3><p>Stories and campaigns shaped for the people on each side of the cultural divide.</p></div><span class="bar"></span></div>
         <div class="svc rv d1" data-href="/our-expertise#market-entry" tabindex="0"><div class="sv-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><path d="M9 10h6M12.5 7.5 15 10l-2.5 2.5"/></svg></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div><div class="sv-txt"><span class="no">04</span><h3>Market Entry and Activation</h3><p>Local insight and practical New Zealand delivery.</p></div><span class="bar"></span></div>
         <div class="svc rv d2" data-href="/our-expertise#events" tabindex="0"><div class="sv-top"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="m12 12 1.2 2.4 2.6.4-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.4z"/></svg></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div><div class="sv-txt"><span class="no">05</span><h3>Events and Industry Connections</h3><p>Purposeful opportunities to engage.</p></div><span class="bar"></span></div>
-        <div class="svc-art rv d2" aria-hidden="true">
-          <svg viewBox="0 0 240 150"><defs><linearGradient id="vg" x1="0" x2="1"><stop offset="0" stop-color="#9478dc"/><stop offset="1" stop-color="#ee86b5"/></linearGradient><clipPath id="vc"><circle class="vl" cx="92" cy="75" r="54"/></clipPath></defs>
-            <circle class="vl" cx="92" cy="75" r="54"/><circle class="vr" cx="148" cy="75" r="54"/>
-            <g clip-path="url(#vc)"><circle class="vr vf" cx="148" cy="75" r="54"/></g>
-            <text x="64" y="80">NZ</text><text x="176" y="80" text-anchor="end">CN</text></svg>
-          <p>Two cultures. <span class="gt">One strategy.</span></p>
-        </div>
+        <a class="svc-cta rv d2" href="#contact"><span class="k">Not sure where to start?</span><h3>Tell us about your brief and we’ll suggest the right mix.</h3><span class="btn w">Let’s Connect <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></a>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
 <!-- IMPACT -->
-<section class="sec" id="impact">
+<section class="sec imp-sec" id="impact">
   <div class="wrap">
     <div class="sec-top">
       <div><div class="kicker rv">Our Work</div><h2 class="h2 rise" style="margin-top:18px">Stories of <span class="it gt">Trust</span></h2></div>
@@ -491,18 +501,26 @@ body.menu-open header .logo img{filter:invert(1)}
   </div>
 </section>
 
-<!-- CLOSING -->
-<section class="sec dark closing">
-  <div class="wrap">
-    <div class="kicker rv">Let’s put our expertise to work</div>
-    <h2 class="h-xl rise" style="margin-top:22px">Let’s Create What’s <span class="it gt">Next.</span></h2>
-    <div class="cl-row">
-      <div>
-        <p class="rv d1">Tell us what you want to achieve. Let’s explore how our cross-cultural expertise can help.</p>
-        <div class="mails rv d2"><div><small>General Enquiry</small><a href="mailto:info@multimarketing.co.nz">info@multimarketing.co.nz</a></div><div><small>Business Enquiry</small><a href="mailto:pauline@multimarketing.co.nz">pauline@multimarketing.co.nz</a></div></div>
-      </div>
-      <div class="rv d2"><a class="btn w" href="/lets-connect">Let’s Connect <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a></div>
+<!-- CLOSING: short CTA with an enquiry form (contact details stay in the footer) -->
+<section class="sec closing" id="contact">
+  <div class="wrap cl-grid">
+    <div class="cl-l">
+      <div class="kicker rv">Let’s put our expertise to work</div>
+      <h2 class="h-xl rise" style="margin-top:22px">Let’s Create What’s <span class="it gt">Next.</span></h2>
+      <p class="rv d1">Tell us what you want to achieve. We’ll come back within one business day with how our cross-cultural expertise can help.</p>
     </div>
+    <form class="cl-form rv d1" id="enq">
+      <div class="f2">
+        <label><span>Name</span><input name="name" required autocomplete="name"></label>
+        <label><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <div class="f2">
+        <label><span>Company</span><input name="company" autocomplete="organization"></label>
+        <label><span>Interested in</span><select name="service"><option>Brand strategy</option><option>Outsourced marketing</option><option>Communications</option><option>Market entry</option><option>Events</option><option>Not sure yet</option></select></label>
+      </div>
+      <label><span>Message</span><textarea name="msg" rows="4" required></textarea></label>
+      <div class="f-act"><button class="btn" type="submit">Send Enquiry <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></button><small>Draft form, not connected yet.</small></div>
+    </form>
   </div>
 </section>
 </main>
@@ -649,6 +667,10 @@ const openS=()=>{so.classList.add('open');document.body.style.overflow='hidden';
 const closeS=()=>{so.classList.remove('open');document.body.style.overflow=''};
 $('#openSearch').onclick=openS;$('#closeSearch').onclick=closeS;
 addEventListener('keydown',e=>{if(e.key==='Escape')closeS();if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openS()}});
+
+/* enquiry form (draft: validates, shows a thank-you, sends nothing) */
+const enq=document.getElementById('enq');
+if(enq)enq.addEventListener('submit',e=>{e.preventDefault();if(!enq.reportValidity())return;enq.innerHTML='<div class="cl-done"><h3>Thank you.</h3><p>We’ll be in touch within one business day.</p></div>'});
 </script>
 </body>
 </html>

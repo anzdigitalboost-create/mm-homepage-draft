@@ -244,14 +244,23 @@ header.solid .lang a.on,body.menu-open .lang a.on{background:var(--ink);color:#f
 .statement.in .ul{background-size:100% 3px}
 
 /* closing */
-.closing{position:relative;overflow:hidden}
-.closing .h-xl{font-weight:500;font-size:clamp(44px,5.6vw,96px);line-height:1.04;letter-spacing:-.028em}
+.closing{background:#fff}
+.cl-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,100px);align-items:center}
+.closing .h-xl{font-weight:500;font-size:clamp(40px,4.4vw,72px);line-height:1.04;letter-spacing:-.028em}
 .closing .h-xl .it{font-size:1em}
-.cl-row{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-top:44px}
-.closing p{font-size:19px;color:rgba(255,255,255,.72);max-width:520px}
-.mails{display:flex;gap:40px;flex-wrap:wrap;margin-top:36px;font-size:15px}
-.mails small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45)}
-.mails a{border-bottom:1px solid rgba(255,255,255,.35)}
+.closing .cl-l p{margin-top:24px;font-size:18px;color:var(--ink-2);max-width:440px}
+.cl-form{display:grid;gap:16px;padding:clamp(26px,3vw,40px);border-radius:26px;background:var(--bg);border:1px solid var(--line)}
+.cl-form .f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cl-form label span{display:block;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cl-form input,.cl-form select,.cl-form textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;outline:0;transition:border-color .3s,box-shadow .3s}
+.cl-form textarea{resize:vertical;min-height:110px}
+.cl-form input:focus,.cl-form select:focus,.cl-form textarea:focus{border-color:#9a4f9f;box-shadow:0 0 0 4px rgba(154,79,159,.12)}
+.cl-form .f-act{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:6px}
+.cl-form .f-act small{font-size:13px;color:var(--muted)}
+.cl-form button{border:0;cursor:pointer;font-family:inherit}
+.cl-done{padding:40px 10px;text-align:center}
+.cl-done h3{font-weight:500;font-size:26px;letter-spacing:-.02em}
+.cl-done p{color:var(--ink-2);margin-top:8px}
 
 footer{background:var(--ink);color:rgba(255,255,255,.62);font-size:15px;padding-bottom:30px}
 .f-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr 1.2fr;gap:40px;padding-top:60px;border-top:1px solid rgba(255,255,255,.12)}
@@ -322,7 +331,7 @@ body.menu-open header .logo img{filter:invert(1)}
   .cases{grid-template-columns:1fr}
   .logos{grid-template-columns:repeat(3,minmax(0,1fr))}.people{grid-template-columns:repeat(3,minmax(0,1fr))}
   .conn{grid-template-columns:1fr}.cn h3{min-height:0;margin-top:24px}
-  .cl-row{grid-template-columns:1fr}
+  .cl-grid{grid-template-columns:1fr}.cl-form .f2{grid-template-columns:1fr}
   .f-grid{grid-template-columns:1fr 1fr}
 }
 @media (max-width:480px){.people{grid-template-columns:repeat(2,minmax(0,1fr))}.f-grid{grid-template-columns:1fr}.hero .cta .btn,.hero .cta .ghost{flex:1;justify-content:center}}
@@ -380,18 +389,26 @@ body.menu-open header .logo img{filter:invert(1)}
     <ul class="crew"><li class="pp rv"><div class="ph"><img src="../assets/team/pauline.png" alt="Pauline Gao" loading="lazy"></div><h3>Pauline Gao</h3><span>Managing Director</span></li><li class="pp rv d1"><div class="ph"><img src="../assets/team/lucy.png" alt="Xilu Wang (Lucy)" loading="lazy"></div><h3>Xilu Wang (Lucy)</h3><span>Marketing Manager</span></li><li class="pp rv d2"><div class="ph"><img src="../assets/team/Lily_Deng.png" alt="Lily Deng" loading="lazy"></div><h3>Lily Deng</h3><span>Account Executive</span></li><li class="pp rv"><div class="ph"><img src="../assets/team/Hailey_Hou.png" alt="Hailey Hou" loading="lazy"></div><h3>Hailey Hou</h3><span>Designer</span></li><li class="pp rv d1"><div class="ph"><img src="../assets/team/Libby_Liu.png" alt="Libby Liu" loading="lazy"></div><h3>Libby Liu</h3><span>Designer</span></li><li class="pp rv d2"><div class="ph"><img src="../assets/team/Holly_Shan.png" alt="Holly Shan" loading="lazy"></div><h3>Holly Shan</h3><span>Editor</span></li></ul>
   </div>
 </section>
-<!-- CLOSING -->
-<section class="sec dark closing">
-  <div class="wrap">
-    <div class="kicker rv">Let’s put our expertise to work</div>
-    <h2 class="h-xl rise" style="margin-top:22px">Let’s Create What’s <span class="it gt">Next.</span></h2>
-    <div class="cl-row">
-      <div>
-        <p class="rv d1">Tell us what you want to achieve. Let’s explore how our cross-cultural expertise can help.</p>
-        <div class="mails rv d2"><div><small>General Enquiry</small><a href="mailto:info@multimarketing.co.nz">info@multimarketing.co.nz</a></div><div><small>Business Enquiry</small><a href="mailto:pauline@multimarketing.co.nz">pauline@multimarketing.co.nz</a></div></div>
-      </div>
-      <div class="rv d2"><a class="btn w" href="/lets-connect">Let’s Connect <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a></div>
+<!-- CLOSING: short CTA with an enquiry form (contact details stay in the footer) -->
+<section class="sec closing" id="contact">
+  <div class="wrap cl-grid">
+    <div class="cl-l">
+      <div class="kicker rv">Let’s put our expertise to work</div>
+      <h2 class="h-xl rise" style="margin-top:22px">Let’s Create What’s <span class="it gt">Next.</span></h2>
+      <p class="rv d1">Tell us what you want to achieve. We’ll come back within one business day with how our cross-cultural expertise can help.</p>
     </div>
+    <form class="cl-form rv d1" id="enq">
+      <div class="f2">
+        <label><span>Name</span><input name="name" required autocomplete="name"></label>
+        <label><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <div class="f2">
+        <label><span>Company</span><input name="company" autocomplete="organization"></label>
+        <label><span>Interested in</span><select name="service"><option>Brand strategy</option><option>Outsourced marketing</option><option>Communications</option><option>Market entry</option><option>Events</option><option>Not sure yet</option></select></label>
+      </div>
+      <label><span>Message</span><textarea name="msg" rows="4" required></textarea></label>
+      <div class="f-act"><button class="btn" type="submit">Send Enquiry <i><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></button><small>Draft form, not connected yet.</small></div>
+    </form>
   </div>
 </section>
 </main>
@@ -475,6 +492,10 @@ const openS=()=>{so.classList.add('open');document.body.style.overflow='hidden';
 const closeS=()=>{so.classList.remove('open');document.body.style.overflow=''};
 $('#openSearch').onclick=openS;$('#closeSearch').onclick=closeS;
 addEventListener('keydown',e=>{if(e.key==='Escape')closeS();if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();openS()}});
+
+/* enquiry form (draft: validates, shows a thank-you, sends nothing) */
+const enq=document.getElementById('enq');
+if(enq)enq.addEventListener('submit',e=>{e.preventDefault();if(!enq.reportValidity())return;enq.innerHTML='<div class="cl-done"><h3>Thank you.</h3><p>We’ll be in touch within one business day.</p></div>'});
 </script>
 </body>
 </html>
