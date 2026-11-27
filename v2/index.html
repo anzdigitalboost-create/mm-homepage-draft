@@ -50,7 +50,8 @@ header.solid{background:rgba(250,250,248,.92);backdrop-filter:blur(12px);-webkit
 header.hide{transform:translateY(-100%)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:86px}
 .logo{display:flex;align-items:center;gap:12px}
-.logo img{height:28px;width:auto;transition:filter .4s}
+.logo img{height:44px;width:auto;transition:filter .4s}
+footer .logo img{height:60px}
 header.solid .logo img{filter:invert(1)}
 .logo .zh{font-size:13px;letter-spacing:.3em;opacity:.7}
 .menu{display:flex;gap:32px;font-size:15px;font-weight:500}
@@ -343,6 +344,7 @@ body.menu-open header .logo img{filter:invert(1)}
 }
 @media (max-width:760px){
   body{font-size:16px}
+  .logo img{height:36px}footer .logo img{height:50px}
   .nav{height:72px}.nav .btn,.logo .zh{display:none}
   .hero .row{grid-template-columns:1fr}
   .kw{flex-direction:row;justify-content:flex-start;gap:16px;font-size:11px;order:-1}
@@ -366,7 +368,7 @@ body.menu-open header .logo img{filter:invert(1)}
 
 <header id="hdr">
   <div class="wrap nav">
-    <a href="./" class="logo" aria-label="MultiMarketing home"><img src="../assets/logo.png" alt="MultiMarketing"></a>
+    <a href="./" class="logo" aria-label="MultiMarketing home"><img src="../assets/mm-logo-white.png" alt="MultiMarketing 卓嘉传播"></a>
     <nav class="menu" aria-label="Main"><a href="/our-story">Our Story</a><a href="/our-expertise">Our Expertise</a><a href="/our-work">Our Work</a><a href="/our-connections">Our Connections</a><a href="/grow-with-us">Grow With Us</a></nav>
     <div class="nav-r">
       <button class="sbtn" id="openSearch" aria-label="Search the site"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></button>
@@ -528,7 +530,7 @@ body.menu-open header .logo img{filter:invert(1)}
 <footer>
   <div class="wrap">
     <div class="f-grid">
-      <div><a href="./" class="logo" aria-label="MultiMarketing home"><img src="../assets/logo.png" alt="MultiMarketing"></a><p class="slog">Trust Creates <span class="it gt">Possibilities.</span></p></div>
+      <div><a href="./" class="logo" aria-label="MultiMarketing home"><img src="../assets/mm-logo-white.png" alt="MultiMarketing 卓嘉传播"></a><p class="slog">Trust Creates <span class="it gt">Possibilities.</span></p></div>
       <div><h4>Quick Links</h4><ul><li><a href="/our-story">Our Story</a></li><li><a href="/our-expertise">Our Expertise</a></li><li><a href="/our-work">Our Work</a></li><li><a href="/our-connections">Our Connections</a></li><li><a href="our-team.html">Our Team</a></li><li><a href="/grow-with-us">Grow With Us</a></li><li><a href="/lets-connect">Let’s Connect</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><span class="lb">General Enquiry</span><a href="mailto:info@multimarketing.co.nz">info@multimarketing.co.nz</a></li><li><span class="lb">Business Enquiry</span><a href="mailto:pauline@multimarketing.co.nz">pauline@multimarketing.co.nz</a></li></ul></div>
       <div><h4>Head Office</h4><a href="https://www.google.com/maps/search/?api=1&query=54+Ponsonby+Road+Grey+Lynn+Auckland+1011" target="_blank" rel="noopener">54 Ponsonby Road, Grey Lynn<br>Auckland 1011, New Zealand ↗</a></div>
